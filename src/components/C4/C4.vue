@@ -13,11 +13,16 @@
           <Card :bordered="false">
             <div>
               <Row>
-                <Col span="18" style="font-size:200%;">{{'=>>>'+list.listname}}</Col>
+                <Col span="15" style="font-size:200%;">{{'=>>>'+list.listname}}</Col>
                 <Col span="3">
                 <Checkbox v-model="list.listchecked" style="width:100%;background-color:yellow;"></Checkbox>
                 </Col>
-                <Col span="3"></Col>
+                <Col span="3">
+                <Button type="warning">修改</Button>
+                </Col>
+                <Col span="3">
+                <Button type="error">删除</Button>
+                </Col>
               </Row>
               <Row>
                 <Col span="3">开始时间：</Col>

@@ -6,20 +6,34 @@
       </div>
       <div class="layout-nav">
         <MenuItem name="1">
+        <router-link to='/'>
         <Icon type="ios-navigate"></Icon>
-        TODOMAIN
+        TODOMAIN</router-link>
         </MenuItem>
+
+        <Submenu name="3">
+            <template slot="title">
+                <Icon type="ios-stats" />
+                FN
+            </template>
+            <MenuGroup title="增加">
+                <MenuItem name="3-1">增加项目</MenuItem>
+                <MenuItem name="3-2">增加标签</MenuItem>
+                <MenuItem name="3-3">增加时间</MenuItem>
+            </MenuGroup>
+            <!-- <MenuGroup title="留存">
+                <MenuItem name="3-4">用户留存</MenuItem>
+                <MenuItem name="3-5">流失用户</MenuItem>
+            </MenuGroup> -->
+        </Submenu>
+
         <MenuItem name="2">
-        <Icon type="ios-keypad"></Icon>
-        跑步
-        </MenuItem>
-        <MenuItem name="3">
         <Icon type="ios-analytics"></Icon>
         个人中心
         </MenuItem>
         <MenuItem name="4">
         <Icon type="ios-paper"></Icon>
-        跑步
+        登入/登出
         </MenuItem>
       </div>
     </Menu>
