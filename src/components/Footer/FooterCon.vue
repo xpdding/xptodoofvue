@@ -1,17 +1,17 @@
 <template>
   <div class="footer">
-    Footer
+    2011-2019 © xpdding
   </div>
 </template>
 <script>
 export default{
-  name: 'Footer'
+  name: 'FooterCon'
 }
 </script>
 <style scoped>
 .footer{
-  background-color: black;
-  color: white;
+  /* background-color: black;
+  color: white; */
   font-size: 150%;
   line-height: 200%
 }

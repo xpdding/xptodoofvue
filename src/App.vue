@@ -1,44 +1,41 @@
 <template>
   <div id="app">
-    <div class="t">
-      <el-row>
-        <el-col :span="12">
-          <div>
-            <Header></Header>
-          </div>
-        </el-col>
-        <el-col :span="12">
-          <div>
-            <HeaderRig></HeaderRig>
-          </div>
-        </el-col>
-      </el-row>
-      <!-- <div class="t-1">
-        <Header></Header>
-      </div>
-      <div class="t-2">
-        <HeaderRig></HeaderRig>
-      </div> -->
-    </div>
-    <div class="m">
-      <router-view/>
-    </div>
-    <div class="b">
-      <Footer></Footer>
+    <div class="layout">
+      <Layout>
+        <Header>
+          <HeaderCon></HeaderCon>
+        </Header>
+        <Content :style="{padding: '0 50px'}">
+          <Breadcrumb :style="{margin: '20px 0'}">
+            <BreadcrumbItem>Home</BreadcrumbItem>
+            <BreadcrumbItem>Components</BreadcrumbItem>
+            <BreadcrumbItem>Layout</BreadcrumbItem>
+          </Breadcrumb>
+          <Card>
+            <div style="min-height: 200px;">
+              <router-view/>
+            </div>
+          </Card>
+
+        </Content>
+        <Footer class="layout-footer-center">
+          <FooterCon></FooterCon>
+        </Footer>
+      </Layout>
     </div>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header/Header'
-import HeaderRig from '@/components/Header/HeaderRig'
-import Footer from '@/components/Footer/Footer'
+import HeaderCon from '@/components/Header/HeaderCon'
+// import HeaderConRig from '@/components/Header/HeaderConRig'
+import FooterCon from '@/components/Footer/FooterCon'
 export default {
   name: 'App',
   components: {
-    Header,
-    Footer,
-    HeaderRig
+    HeaderCon,
+    FooterCon
+    // HeaderConRig
   }
 }
 </script>
@@ -52,28 +49,29 @@ export default {
   color: #2c3e50;
   margin-top: 10px;
 }
-.t {
-  border: 1px solid rgb(4, 235, 204);
-  display: flex;
-  flex-direction: column;
+.layout {
+  border: 1px solid #d7dde4;
+  background: #f5f7f9;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
 }
-.m {
-  border: 1px solid black;
+.layout-logo {
+  width: 100px;
+  height: 30px;
+  background: #5b6270;
+  border-radius: 3px;
+  float: left;
+  position: relative;
+  top: 15px;
+  left: 20px;
 }
-.b {
-  border: 1px solid blue;
-  /* position: absolute;  */
-  /*相对于父元素contanier定位*/
-  width: 100%;
-  /* bottom: 0; */
-  /*始终距离它的父元素的底部为0px.则是处于父元素的最底*/
+.layout-nav {
+  width: 420px;
+  margin: 0 auto;
+  margin-right: 20px;
 }
-.t-1 {
-  width: 600px;
-  border: 1px solid blue;
-}
-.t-2 {
-  width: 600px;
-  border: 1px solid blue;
+.layout-footer-center {
+  text-align: center;
 }
 </style>

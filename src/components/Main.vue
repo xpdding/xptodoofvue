@@ -1,28 +1,28 @@
 <template>
   <div class="t">
     <div class="t-1">
-    <el-row :gutter="30">
-      <el-col :span="2">
+    <Row :gutter="30">
+      <Col :span="2">
         <div class="grid-content bg-purple">
           <C1></C1>
         </div>
-      </el-col>
-      <el-col :span="3">
+      </Col>
+      <Col :span="3">
         <div class="grid-content bg-purple">
           <C2></C2>
         </div>
-      </el-col>
-      <el-col :span="3">
+      </Col>
+      <Col :span="3">
         <div class="grid-content bg-purple">
           <C3></C3>
         </div>
-      </el-col>
-      <el-col :span="16">
+      </Col>
+      <Col :span="16">
         <div class="grid-content bg-purple">
           <C4></C4>
         </div>
-      </el-col>
-    </el-row></div>
+      </Col>
+    </Row></div>
   </div>
 </template>
 <script>
