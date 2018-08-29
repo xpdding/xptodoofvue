@@ -1,6 +1,6 @@
 <template>
   <div class="t">
-    <div>
+    <div class="t-1">
     <el-row :gutter="30">
       <el-col :span="2">
         <div class="grid-content bg-purple">
@@ -17,7 +17,7 @@
           <C3></C3>
         </div>
       </el-col>
-      <el-col :span="15">
+      <el-col :span="16">
         <div class="grid-content bg-purple">
           <C4></C4>
         </div>
@@ -44,9 +44,9 @@ export default {
 .el-row {
   /* margin: 0 auto; */
   margin-bottom: 20px;
-  &:last-child {
+  /* &:last-child {
     margin-bottom: 0;
-  }
+  } */
 }
 .el-col {
   border-radius: 4px;
@@ -55,7 +55,7 @@ export default {
   background: #99a9bf;
 }
 .bg-purple {
-  background: #d3dce6;
+  background: #ffe1aa;
 }
 .bg-purple-light {
   background: #e5e9f2;
@@ -73,4 +73,7 @@ export default {
   padding:10px 10px;
   border: 1px solid red;
 }
+/* .t-1{
+  border: 1px solid green;
+} */
 </style>

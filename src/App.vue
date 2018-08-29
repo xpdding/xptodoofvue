@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,6 +34,11 @@ export default {
   border: 1px solid black
 }
 .b{
-  border: 1px solid blue
+  border: 1px solid blue;
+  /* position: absolute;  */
+  /*相对于父元素contanier定位*/
+  width: 100%;
+  /* bottom: 0; */
+  /*始终距离它的父元素的底部为0px.则是处于父元素的最底*/
 }
 </style>
