@@ -1,7 +1,7 @@
 <template>
   <div class="t">
     <div class="t-1">
-    <Row :gutter="30">
+    <Row :gutter="10">
       <Col :span="2">
         <div class="grid-content bg-purple">
           <C1></C1>

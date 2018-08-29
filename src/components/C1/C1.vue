@@ -1,37 +1,21 @@
 <template>
   <div>
-    <h1>C1_FN</h1>
+    <!-- <h1>C1_FN</h1> -->
+    <div>
+      <!-- <Button type="info">Info</Button> -->
+      <!-- <Button type="success">Success</Button> -->
+      <!-- <Button type="warning">Warning</Button> -->
+      <Button type="error" style="width:100%;font-size:200%;font-weight:blod;">功能</Button>
+    </div>
     <div class="t">
-      <el-row>
-        <el-col :span="24">
-          <div class="grid-content bg-purple"><i class="el-icon-menu"></i></div>
-        </el-col>
-        <!-- <el-col :span="24"><div class="grid-content bg-purple-light"></div></el-col> -->
-      </el-row>
-      <el-row>
-        <!-- <el-col :span="24"><div class="grid-content bg-purple"></div></el-col> -->
-        <el-col :span="24">
-          <div class="grid-content bg-purple-light"><i class="el-icon-date"></i></div>
-        </el-col>
-      </el-row>
-      <el-row>
-        <el-col :span="24">
-          <div class="grid-content bg-purple"><i class="el-icon-success"></i></div>
-        </el-col>
-        <!-- <el-col :span="24"><div class="grid-content bg-purple-light"></div></el-col> -->
-      </el-row>
-      <el-row>
-        <!-- <el-col :span="24"><div class="grid-content bg-purple"></div></el-col> -->
-        <el-col :span="24">
-          <div class="grid-content bg-purple-light"><i class="el-icon-star-on"></i></div>
-        </el-col>
-      </el-row>
-      <el-row>
-        <el-col :span="24">
-          <div class="grid-content bg-purple"><i class="el-icon-setting"></i></div>
-        </el-col>
-        <!-- <el-col :span="24"><div class="grid-content bg-purple-light"></div></el-col> -->
-      </el-row>
+      <div>
+        <Icon type="md-add-circle" />
+        <Icon type="md-folder-open" />
+        <Icon type="ios-paper-plane" />
+        <Icon type="md-pricetags" />
+        <Icon type="md-snow" />
+        <Icon type="ios-star" />
+      </div>
     </div>
   </div>
 </template>
@@ -43,7 +27,7 @@ export default {
 <style scoped>
 .el-row {
   margin-bottom: 20px;
-  border:  2px solid red;
+  border: 2px solid red;
   &:last-child {
     margin-bottom: 0;
   }
@@ -73,6 +57,6 @@ export default {
   /* display: flex;
   flex-direction: row; */
   font-size: 400%;
-  color: darkcyan
+  color: darkcyan;
 }
 </style>
